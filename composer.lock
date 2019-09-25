@@ -231,16 +231,16 @@
         },
         {
             "name": "eoneopay/eoneopay-phpsdk",
-            "version": "v1.0.0-beta16",
+            "version": "v1.0.0-beta17",
             "source": {
                 "type": "git",
                 "url": "git@github.com:loyaltycorp/eoneopay-phpsdk.git",
-                "reference": "ec75e0e07764624e1d7a8fb67995238fd110b4b3"
+                "reference": "b4d69e0e6382a9c96afdda49b7d7731e81c9249e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/loyaltycorp/eoneopay-phpsdk/zipball/ec75e0e07764624e1d7a8fb67995238fd110b4b3",
-                "reference": "ec75e0e07764624e1d7a8fb67995238fd110b4b3",
+                "url": "https://api.github.com/repos/loyaltycorp/eoneopay-phpsdk/zipball/b4d69e0e6382a9c96afdda49b7d7731e81c9249e",
+                "reference": "b4d69e0e6382a9c96afdda49b7d7731e81c9249e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -297,10 +297,10 @@
                 "sdk"
             ],
             "support": {
-                "source": "https://github.com/loyaltycorp/eoneopay-phpsdk/tree/v1.0.0-beta16",
+                "source": "https://github.com/loyaltycorp/eoneopay-phpsdk/tree/v1.0.0-beta17",
                 "issues": "https://github.com/loyaltycorp/eoneopay-phpsdk/issues"
             },
-            "time": "2019-09-24T00:36:37+00:00"
+            "time": "2019-09-24T05:44:25+00:00"
         },
         {
             "name": "eoneopay/utils",

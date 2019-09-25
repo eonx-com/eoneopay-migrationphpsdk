@@ -19,7 +19,7 @@
         </whitelist>
     </filter>
     <php>
-        <env name="PAYMENTS_API_KEY" value="AMIGRATIONAPIKEY"/>
+        <env name="PAYMENTS_API_KEY" value="ANACTUALAPIKEY"/>
         <env name="PAYMENTS_BASE_URI" value="http://payments.eoneopay.box"/>
         <env name="PAYMENTS_SHARED_KEY" value="SHARED"/>
     </php>
