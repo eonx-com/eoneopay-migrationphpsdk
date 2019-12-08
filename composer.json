@@ -1,31 +1,22 @@
 {
-  "name": "eoneopay/eoneopay-migrationphpsdk",
+  "name": "eonx-com/eoneopay-migrationphpsdk",
   "description": "PHP SDK for migrating users to eoneopay v2",
   "keywords": [
     "eoneopay",
     "sdk",
     "migration"
   ],
-  "license": "Proprietary",
+  "license": "BSD-3-Clause",
   "type": "library",
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://repo.packagist.com/eoneopay/"
-    },
-    {
-      "packagist.org": false
-    }
-  ],
   "require": {
     "php": ">=7.1",
-    "eoneopay/eoneopay-phpsdk": "^v1.0@beta",
-    "eoneopay/utils": "^0.2",
-    "ext-json": "*",
-    "loyaltycorp/sdkblueprint": "^1.0@beta"
+    "eonx-com/eoneopay-phpsdk": "^v1.0@beta",
+    "eonx-com/sdkblueprint": "^1.0@beta",
+    "eonx-com/utils": "^0.2",
+    "ext-json": "*"
   },
   "require-dev": {
-    "eoneopay/standards": "dev-master",
+    "eonx-com/standards": "^0.2",
     "friendsofphp/php-cs-fixer": "^2.9",
     "indigophp/doctrine-annotation-autoload": "^0.1.0",
     "laravel/lumen-framework": "^5.5",
