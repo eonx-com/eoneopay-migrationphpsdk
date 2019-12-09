@@ -1,5 +1,5 @@
 {
-  "name": "eonx-com/eoneopay-migrationphpsdk",
+  "name": "eonx-com/payments-migrationphpsdk",
   "description": "PHP SDK for migrating users to eoneopay v2",
   "keywords": [
     "eoneopay",
@@ -10,9 +10,9 @@
   "type": "library",
   "require": {
     "php": ">=7.1",
-    "eonx-com/eoneopay-phpsdk": "^v1.0@beta",
-    "eonx-com/sdkblueprint": "^1.0@beta",
-    "eonx-com/utils": "^0.2",
+    "eonx-com/payments-phpsdk": "^1.0",
+    "eonx-com/sdkblueprint": "^1.0",
+    "eonx-com/utils": "^1.0",
     "ext-json": "*"
   },
   "require-dev": {
@@ -39,6 +39,10 @@
     "psr-4": {
       "Tests\\EoneoPay\\MigrationPhpSdk\\": "tests/"
     }
+  },
+  "replace": {
+    "eoneopay/eoneopay-migrationphpsdk": "*",
+    "eonx-com/eoneopay-migrationphpsdk": "*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

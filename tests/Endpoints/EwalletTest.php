@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Tests\EoneoPay\MigrationPhpSdk\Endpoints;
 
 use EoneoPay\MigrationPhpSdk\Endpoints\Ewallet;
+use EoneoPay\PhpSdk\Endpoints\Balance;
 use Tests\EoneoPay\MigrationPhpSdk\TestCase;
 
 /**
@@ -54,8 +55,9 @@ final class EwalletTest extends TestCase
          * @see https://youtrack.jetbrains.com/issue/WI-37859 - typehint required until PhpStorm recognises assertion
          */
         $balances = $ewallet->getBalances();
-        self::assertSame('1000.01', $balances['available']);
-        self::assertSame('1000.01', $balances['balance']);
+        self::assertInstanceOf(Balance::class, $balances);
+        self::assertSame('1000.01', $balances->getAvailable());
+        self::assertSame('1000.01', $balances->getBalance());
     }
 
     /**

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9daef96ddcf4b4b1f0b9e19c5056a33",
+    "content-hash": "10dd0d7757317f262b0f202b15f8ccd8",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -219,93 +219,32 @@
             "time": "2019-10-30T14:39:59+00:00"
         },
         {
-            "name": "eoneopay/utils",
-            "version": "v0.2.13",
+            "name": "eonx-com/payments-phpsdk",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/loyaltycorp/utils.git",
-                "reference": "981e762b941bf0cc78fb5427cfd75ac956a02fdb"
+                "url": "https://github.com/eonx-com/payments-phpsdk.git",
+                "reference": "ff522c6298155f823f0c6c29bb1409ddba462824"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/loyaltycorp/utils/zipball/981e762b941bf0cc78fb5427cfd75ac956a02fdb",
-                "reference": "981e762b941bf0cc78fb5427cfd75ac956a02fdb",
+                "url": "https://api.github.com/repos/eonx-com/payments-phpsdk/zipball/ff522c6298155f823f0c6c29bb1409ddba462824",
+                "reference": "ff522c6298155f823f0c6c29bb1409ddba462824",
                 "shasum": ""
             },
             "require": {
-                "ext-dom": "*",
+                "eonx-com/sdkblueprint": "^1.0",
+                "eonx-com/utils": "^1.0",
                 "ext-json": "*",
-                "ext-libxml": "*",
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "doctrine/annotations": "^1.6",
-                "eoneopay/standards": "dev-master",
-                "ext-bcmath": "*",
-                "ext-simplexml": "*",
-                "illuminate/http": "^5.8",
-                "illuminate/routing": "^5.8",
-                "illuminate/support": "^5.5",
-                "indigophp/doctrine-annotation-autoload": "^0.1.0",
-                "mockery/mockery": "^1.0",
-                "phpmd/phpmd": "^2.6",
-                "phpstan/phpstan": "^0.11",
-                "phpunit/phpunit": "^7.0",
-                "ramsey/uuid": "^3.8",
-                "roave/security-advisories": "dev-master",
-                "sebastian/phpcpd": "^4.0",
-                "squizlabs/php_codesniffer": "3.*"
-            },
-            "suggest": {
-                "doctrine/annotations": "Required to use the annotation reader",
-                "ext-bcmath": "To use the Math service",
-                "ext-simplexml": "To test whether a string is xml",
-                "illuminate/support": "Required to use the configuration service provider in Lumen",
-                "indigophp/doctrine-annotation-autoload": "Recommended to autoload custom doctrine annotations",
-                "ramsey/uuid": "Required for uuid generation"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "EoneoPay\\Utils\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "Utility and helper classes",
-            "keywords": [
-                "eoneopay",
-                "helpers",
-                "utilities"
-            ],
-            "abandoned": "eonx-com/utils",
-            "time": "2019-11-06T21:13:49+00:00"
-        },
-        {
-            "name": "eonx-com/eoneopay-phpsdk",
-            "version": "v1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/eonx-com/eoneopay-phpsdk.git",
-                "reference": "275573bab334ee62a6633b0a92fdb15204a87360"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/eonx-com/eoneopay-phpsdk/zipball/275573bab334ee62a6633b0a92fdb15204a87360",
-                "reference": "275573bab334ee62a6633b0a92fdb15204a87360",
-                "shasum": ""
-            },
-            "require": {
-                "eoneopay/utils": "^0.2",
-                "ext-json": "*",
-                "loyaltycorp/sdkblueprint": "^1.0@beta",
                 "php": ">=7.1",
                 "symfony/validator": "^4.2"
             },
+            "replace": {
+                "eoneopay/eoneopay-phpsdk": "*",
+                "eonx-com/eoneopay-phpsdk": "*"
+            },
             "require-dev": {
-                "eoneopay/standards": "dev-master",
+                "eonx-com/standards": "^0.2",
                 "friendsofphp/php-cs-fixer": "^2.9",
                 "indigophp/doctrine-annotation-autoload": "^0.1.0",
                 "laravel/lumen-framework": "^5.5",
@@ -340,26 +279,26 @@
                 "eoneopay",
                 "sdk"
             ],
-            "time": "2019-11-19T04:13:09+00:00"
+            "time": "2019-12-09T00:47:29+00:00"
         },
         {
             "name": "eonx-com/sdkblueprint",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eonx-com/sdkblueprint.git",
-                "reference": "8d5e538cd11fbe073334278c15190b2e33c1bf6b"
+                "reference": "193b2bb6c336f0ca3c1839341073ac6fd5806f31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eonx-com/sdkblueprint/zipball/8d5e538cd11fbe073334278c15190b2e33c1bf6b",
-                "reference": "8d5e538cd11fbe073334278c15190b2e33c1bf6b",
+                "url": "https://api.github.com/repos/eonx-com/sdkblueprint/zipball/193b2bb6c336f0ca3c1839341073ac6fd5806f31",
+                "reference": "193b2bb6c336f0ca3c1839341073ac6fd5806f31",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "^1.6",
                 "doctrine/cache": "^1.7",
-                "eoneopay/utils": "^0.2",
+                "eonx-com/utils": "^1.0",
                 "ext-dom": "*",
                 "ext-json": "*",
                 "ext-libxml": "*",
@@ -373,8 +312,11 @@
                 "symfony/property-info": "^4.1",
                 "symfony/serializer": "^4.1"
             },
+            "replace": {
+                "loyaltycorp/sdkblueprint": "*"
+            },
             "require-dev": {
-                "eoneopay/standards": "dev-master",
+                "eonx-com/standards": "^0.2",
                 "friendsofphp/php-cs-fixer": "^2.9",
                 "indigophp/doctrine-annotation-autoload": "^0.1.0",
                 "php-http/guzzle6-adapter": "^1.1",
@@ -407,20 +349,20 @@
                 "loyaltycorp",
                 "sdk"
             ],
-            "time": "2019-09-24T05:41:49+00:00"
+            "time": "2019-11-20T03:51:14+00:00"
         },
         {
             "name": "eonx-com/utils",
-            "version": "v0.2.13",
+            "version": "v1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/eonx-com/utils.git",
-                "reference": "981e762b941bf0cc78fb5427cfd75ac956a02fdb"
+                "reference": "ba295cc1b45c08dce13dc74fbdbd6e0b4d30b5c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/eonx-com/utils/zipball/981e762b941bf0cc78fb5427cfd75ac956a02fdb",
-                "reference": "981e762b941bf0cc78fb5427cfd75ac956a02fdb",
+                "url": "https://api.github.com/repos/eonx-com/utils/zipball/ba295cc1b45c08dce13dc74fbdbd6e0b4d30b5c5",
+                "reference": "ba295cc1b45c08dce13dc74fbdbd6e0b4d30b5c5",
                 "shasum": ""
             },
             "require": {
@@ -429,9 +371,12 @@
                 "ext-libxml": "*",
                 "php": ">=7.1"
             },
+            "replace": {
+                "eoneopay/utils": "^0.2"
+            },
             "require-dev": {
                 "doctrine/annotations": "^1.6",
-                "eoneopay/standards": "dev-master",
+                "eonx-com/standards": "^0.2",
                 "ext-bcmath": "*",
                 "ext-simplexml": "*",
                 "illuminate/http": "^5.8",
@@ -471,7 +416,7 @@
                 "helpers",
                 "utilities"
             ],
-            "time": "2019-11-06T21:13:49+00:00"
+            "time": "2019-12-08T22:00:19+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -574,7 +519,7 @@
                     "src/functions_include.php"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -634,7 +579,7 @@
                     "src/functions_include.php"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -661,83 +606,6 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
-        },
-        {
-            "name": "loyaltycorp/sdkblueprint",
-            "version": "v1.0.0-beta6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/loyaltycorp/sdkblueprint.git",
-                "reference": "8d5e538cd11fbe073334278c15190b2e33c1bf6b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/loyaltycorp/sdkblueprint/zipball/8d5e538cd11fbe073334278c15190b2e33c1bf6b",
-                "reference": "8d5e538cd11fbe073334278c15190b2e33c1bf6b",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/annotations": "^1.6",
-                "doctrine/cache": "^1.7",
-                "eoneopay/utils": "^0.2",
-                "ext-dom": "*",
-                "ext-json": "*",
-                "ext-libxml": "*",
-                "ext-mbstring": "*",
-                "ext-simplexml": "*",
-                "guzzlehttp/guzzle": "^6.0",
-                "php": ">=7.1",
-                "symfony/expression-language": "^4.1",
-                "symfony/intl": "^4.1",
-                "symfony/property-access": "^4.1",
-                "symfony/property-info": "^4.1",
-                "symfony/serializer": "^4.1"
-            },
-            "require-dev": {
-                "eoneopay/standards": "dev-master",
-                "friendsofphp/php-cs-fixer": "^2.9",
-                "indigophp/doctrine-annotation-autoload": "^0.1.0",
-                "php-http/guzzle6-adapter": "^1.1",
-                "phpmd/phpmd": "^2.6",
-                "phpstan/phpstan": "^0.11",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
-                "phpunit/phpunit": "^7.0",
-                "roave/security-advisories": "dev-master",
-                "sebastian/phpcpd": "^4.0",
-                "squizlabs/php_codesniffer": "3.*",
-                "woohoolabs/yang": "^1.2"
-            },
-            "suggest": {
-                "sensiolabs/security-checker": "Check project's dependencies for known vulnerabilities"
-            },
-            "type": "package",
-            "autoload": {
-                "psr-4": {
-                    "LoyaltyCorp\\SdkBlueprint\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Tests\\LoyaltyCorp\\SdkBlueprint\\": "tests/"
-                }
-            },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "description": "A library for quickly building an SDK for a RESTful API",
-            "keywords": [
-                "api",
-                "loyaltycorp",
-                "sdk"
-            ],
-            "support": {
-                "source": "https://github.com/loyaltycorp/sdkblueprint/tree/v1.0.0-beta6",
-                "issues": "https://github.com/loyaltycorp/sdkblueprint/issues"
-            },
-            "abandoned": "eonx-com/sdkblueprint",
-            "time": "2019-09-24T05:41:49+00:00"
         },
         {
             "name": "psr/cache",
@@ -767,7 +635,7 @@
                     "Psr\\Cache\\": "src/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -813,7 +681,7 @@
                     "Psr\\Container\\": "src/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -862,7 +730,7 @@
                     "Psr\\Http\\Message\\": "src/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -958,7 +826,7 @@
                     "src/getallheaders.php"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1972,13 +1840,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/composer/semver/zipball/46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
                 "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.3.2 || ^7.0"
@@ -1998,7 +1860,7 @@
                     "Composer\\Semver\\": "src"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2207,13 +2069,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/72b6fbf76adb3cf5bc0db68559b33d41219aba27",
                 "reference": "72b6fbf76adb3cf5bc0db68559b33d41219aba27",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0"
@@ -2232,7 +2088,7 @@
                     "Cron\\": "src/Cron/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2267,13 +2123,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/92dd169c32f6f55ba570c309d83f5209cefb5e23",
                 "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "doctrine/lexer": "^1.0.1",
@@ -2299,7 +2149,7 @@
                     "Egulias\\EmailValidator\\": "EmailValidator"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2477,13 +2327,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/auth/zipball/59d63d9dfda2836e8a75b4f1c6df8e2be3fb3909",
                 "reference": "59d63d9dfda2836e8a75b4f1c6df8e2be3fb3909",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
@@ -2508,7 +2352,7 @@
                     "Illuminate\\Auth\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2534,13 +2378,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/broadcasting/zipball/b1217ccf631e86ed17d59cdd43562555996e9a48",
                 "reference": "b1217ccf631e86ed17d59cdd43562555996e9a48",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -2565,7 +2403,7 @@
                     "Illuminate\\Broadcasting\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2591,13 +2429,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/bus/zipball/6a15b03cdc6739c3f2898d67dc4fe21357d60e07",
                 "reference": "6a15b03cdc6739c3f2898d67dc4fe21357d60e07",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
@@ -2616,7 +2448,7 @@
                     "Illuminate\\Bus\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2642,13 +2474,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/cache/zipball/e6acac59f94c6362809b580918f7f3f6142d5796",
                 "reference": "e6acac59f94c6362809b580918f7f3f6142d5796",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
@@ -2671,7 +2497,7 @@
                     "Illuminate\\Cache\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2697,13 +2523,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/config/zipball/6dac1dee3fb51704767c69a07aead1bc75c12368",
                 "reference": "6dac1dee3fb51704767c69a07aead1bc75c12368",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
@@ -2721,7 +2541,7 @@
                     "Illuminate\\Config\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2747,13 +2567,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/console/zipball/e6e4708e6c6baaf92120848e885855ab3d76f30f",
                 "reference": "e6e4708e6c6baaf92120848e885855ab3d76f30f",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
@@ -2778,7 +2592,7 @@
                     "Illuminate\\Console\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2804,13 +2618,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/container/zipball/b42e5ef939144b77f78130918da0ce2d9ee16574",
                 "reference": "b42e5ef939144b77f78130918da0ce2d9ee16574",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
@@ -2829,7 +2637,7 @@
                     "Illuminate\\Container\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2855,13 +2663,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/contracts/zipball/00fc6afee788fa07c311b0650ad276585f8aef96",
                 "reference": "00fc6afee788fa07c311b0650ad276585f8aef96",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1.3",
@@ -2879,7 +2681,7 @@
                     "Illuminate\\Contracts\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2905,13 +2707,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/database/zipball/56635c5e683a2e3c6c01a8a3bcad3683223d3cec",
                 "reference": "56635c5e683a2e3c6c01a8a3bcad3683223d3cec",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -2939,7 +2735,7 @@
                     "Illuminate\\Database\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2971,13 +2767,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/encryption/zipball/135c631bab0e0a8b9535b5750687e0a867c85193",
                 "reference": "135c631bab0e0a8b9535b5750687e0a867c85193",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -2998,7 +2788,7 @@
                     "Illuminate\\Encryption\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3024,13 +2814,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/events/zipball/a85d7c273bc4e3357000c5fc4812374598515de3",
                 "reference": "a85d7c273bc4e3357000c5fc4812374598515de3",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/container": "5.8.*",
@@ -3049,7 +2833,7 @@
                     "Illuminate\\Events\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3075,13 +2859,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/filesystem/zipball/494ba903402d64ec49c8d869ab61791db34b2288",
                 "reference": "494ba903402d64ec49c8d869ab61791db34b2288",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
@@ -3107,7 +2885,7 @@
                     "Illuminate\\Filesystem\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3133,13 +2911,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/hashing/zipball/56a9f294d9615bbbb14e2093fb0537388952cc2c",
                 "reference": "56a9f294d9615bbbb14e2093fb0537388952cc2c",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
@@ -3157,7 +2929,7 @@
                     "Illuminate\\Hashing\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3183,13 +2955,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/http/zipball/cd0f549611de16b323af88478b441e4d52ceef40",
                 "reference": "cd0f549611de16b323af88478b441e4d52ceef40",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -3213,7 +2979,7 @@
                     "Illuminate\\Http\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3239,13 +3005,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/log/zipball/1d23931e0ff74fa461fc44dc1594c66f8f6ad36b",
                 "reference": "1d23931e0ff74fa461fc44dc1594c66f8f6ad36b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
@@ -3264,7 +3024,7 @@
                     "Illuminate\\Log\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3290,13 +3050,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/pagination/zipball/391134bc87a47b3dfe5cf60df73e5e0080aec220",
                 "reference": "391134bc87a47b3dfe5cf60df73e5e0080aec220",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -3315,7 +3069,7 @@
                     "Illuminate\\Pagination\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3341,13 +3095,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/pipeline/zipball/9e81b335d853ddd633a86a7f7e3fceed3b14f3d7",
                 "reference": "9e81b335d853ddd633a86a7f7e3fceed3b14f3d7",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "5.8.*",
@@ -3365,7 +3113,7 @@
                     "Illuminate\\Pipeline\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3391,13 +3139,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/queue/zipball/36559f77916c16643bc614765db1e840d7bd9a00",
                 "reference": "36559f77916c16643bc614765db1e840d7bd9a00",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -3430,7 +3172,7 @@
                     "Illuminate\\Queue\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3456,13 +3198,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/session/zipball/087d360f7b9d75bc964280b890c2f2fe8efaf71f",
                 "reference": "087d360f7b9d75bc964280b890c2f2fe8efaf71f",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -3487,7 +3223,7 @@
                     "Illuminate\\Session\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3513,13 +3249,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/support/zipball/e63a495d3bf01654f70def1046fb925c4bb56506",
                 "reference": "e63a495d3bf01654f70def1046fb925c4bb56506",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "doctrine/inflector": "^1.1",
@@ -3554,7 +3284,7 @@
                     "helpers.php"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3580,13 +3310,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/translation/zipball/a23986a9ae77013046426bbeb4fe9a29e2527f76",
                 "reference": "a23986a9ae77013046426bbeb4fe9a29e2527f76",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -3606,7 +3330,7 @@
                     "Illuminate\\Translation\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3632,13 +3356,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/validation/zipball/dec713980d95b41e2ce915e1d6d844a969321261",
                 "reference": "dec713980d95b41e2ce915e1d6d844a969321261",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "egulias/email-validator": "^2.0",
@@ -3664,7 +3382,7 @@
                     "Illuminate\\Validation\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3690,13 +3408,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/view/zipball/c859919bc3be97a3f114377d5d812f047b8ea90d",
                 "reference": "c859919bc3be97a3f114377d5d812f047b8ea90d",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-json": "*",
@@ -3719,7 +3431,7 @@
                     "Illuminate\\View\\": ""
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3745,13 +3457,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/indigophp/doctrine-annotation-autoload/zipball/5c2018e7b1277f691600e69b4d3177b706e8aa80",
                 "reference": "5c2018e7b1277f691600e69b4d3177b706e8aa80",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0",
@@ -3770,7 +3476,7 @@
                     "Indigo\\Composer\\": "src/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3801,13 +3507,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/75c7effcf3f77501d0e0caa75111aff4daa0dd48",
                 "reference": "75c7effcf3f77501d0e0caa75111aff4daa0dd48",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ocramius/package-versions": "^1.2.0",
@@ -3827,7 +3527,7 @@
                     "Jean85\\": "src/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3858,13 +3558,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/lumen-framework/zipball/5d1d1ba8dbc5b69a17370d276e96d30eb00a2b48",
                 "reference": "5d1d1ba8dbc5b69a17370d276e96d30eb00a2b48",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "dragonmantank/cron-expression": "^2.0",
@@ -3917,7 +3611,7 @@
                     "src/helpers.php"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4026,13 +3720,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/007c053ae6f31bba39dfa19a7726f56e9763bbea",
                 "reference": "007c053ae6f31bba39dfa19a7726f56e9763bbea",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1"
@@ -4054,7 +3742,7 @@
                     "src/DeepCopy/deep_copy.php"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4226,13 +3914,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nette/di/zipball/4aff517a1c6bb5c36fa09733d4cea089f529de6d",
                 "reference": "4aff517a1c6bb5c36fa09733d4cea089f529de6d",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
@@ -4264,7 +3946,7 @@
                     "src/compatibility.php"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
                 "GPL-2.0",
@@ -4305,13 +3987,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nette/finder/zipball/14164e1ddd69e9c5f627ff82a10874b3f5bba5fe",
                 "reference": "14164e1ddd69e9c5f627ff82a10874b3f5bba5fe",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "nette/utils": "^2.4 || ~3.0.0",
@@ -4335,7 +4011,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
                 "GPL-2.0",
@@ -4373,13 +4049,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nette/neon/zipball/cbff32059cbdd8720deccf9e9eace6ee516f02eb",
                 "reference": "cbff32059cbdd8720deccf9e9eace6ee516f02eb",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-iconv": "*",
@@ -4401,7 +4071,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
                 "GPL-2.0",
@@ -4417,7 +4087,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
+            "description": "? Nette NEON: encodes and decodes NEON file format.",
             "homepage": "http://ne-on.org",
             "keywords": [
                 "export",
@@ -4499,13 +4169,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nette/robot-loader/zipball/0712a0e39ae7956d6a94c0ab6ad41aa842544b5c",
                 "reference": "0712a0e39ae7956d6a94c0ab6ad41aa842544b5c",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
@@ -4528,7 +4192,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
                 "GPL-2.0",
@@ -4544,7 +4208,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍀 Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
+            "description": "? Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
             "homepage": "https://nette.org",
             "keywords": [
                 "autoload",
@@ -4701,13 +4365,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nikic/FastRoute/zipball/181d480e08d9476e61381e04a71b34dc0432e812",
                 "reference": "181d480e08d9476e61381e04a71b34dc0432e812",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
@@ -4724,7 +4382,7 @@
                     "src/functions.php"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -4805,13 +4463,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Ocramius/PackageVersions/zipball/1d32342b8c1eb27353c8887c366147b4c2da673c",
                 "reference": "1d32342b8c1eb27353c8887c366147b4c2da673c",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0.0",
@@ -4837,7 +4489,7 @@
                     "PackageVersions\\": "src/PackageVersions"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4923,13 +4575,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
                 "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7"
@@ -4942,7 +4588,7 @@
                 "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4974,13 +4620,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/pdepend/pdepend/zipball/9daf26d0368d4a12bed1cacae1a9f3a6f0adf239",
                 "reference": "9daf26d0368d4a12bed1cacae1a9f3a6f0adf239",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.7",
@@ -5001,7 +4641,7 @@
                     "PDepend\\": "src/main/php/PDepend"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5020,13 +4660,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phar-io/manifest/zipball/7761fcacf03b4d4f16e7ccb606d4879ca431fcf4",
                 "reference": "7761fcacf03b4d4f16e7ccb606d4879ca431fcf4",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
@@ -5045,7 +4679,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5081,13 +4715,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phar-io/version/zipball/45a2ec53a73c70ce41d55cedef9063630abaf1b6",
                 "reference": "45a2ec53a73c70ce41d55cedef9063630abaf1b6",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0"
@@ -5098,7 +4726,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5134,13 +4762,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/PHP-CS-Fixer/diff/zipball/78bb099e9c16361126c86ce82ec4405ebab8e756",
                 "reference": "78bb099e9c16361126c86ce82ec4405ebab8e756",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0"
@@ -5155,7 +4777,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5191,13 +4813,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/63a995caa1ca9e5590304cd845c15ad6d482a62a",
                 "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
@@ -5216,7 +4832,7 @@
                     "phpDocumentor\\Reflection\\": "src/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5249,13 +4865,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
                 "reference": "b83ff7cfcfee7827e1e78b637a5904fe6a96698e",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0",
@@ -5281,7 +4891,7 @@
                     ]
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5306,13 +4916,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/2e32a6d48972b2c1976ed5d8967145b6cec4a4a9",
                 "reference": "2e32a6d48972b2c1976ed5d8967145b6cec4a4a9",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1",
@@ -5334,7 +4938,7 @@
                     "phpDocumentor\\Reflection\\": "src"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5359,13 +4963,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpmd/phpmd/zipball/a05a999c644f4bc9a204846017db7bb7809fbe4c",
                 "reference": "a05a999c644f4bc9a204846017db7bb7809fbe4c",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-xml": "*",
@@ -5387,27 +4985,27 @@
                     "PHPMD\\": "src/main/php"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
             "authors": [
                 {
                     "name": "Manuel Pichler",
-                    "role": "Project Founder",
                     "email": "github@manuel-pichler.de",
-                    "homepage": "https://github.com/manuelpichler"
+                    "homepage": "https://github.com/manuelpichler",
+                    "role": "Project Founder"
                 },
                 {
                     "name": "Marc Würth",
-                    "role": "Project Maintainer",
                     "email": "ravage@bluewin.ch",
-                    "homepage": "https://github.com/ravage84"
+                    "homepage": "https://github.com/ravage84",
+                    "role": "Project Maintainer"
                 },
                 {
                     "name": "Other contributors",
-                    "role": "Contributors",
-                    "homepage": "https://github.com/phpmd/phpmd/graphs/contributors"
+                    "homepage": "https://github.com/phpmd/phpmd/graphs/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "PHPMD is a spin-off project of PHP Depend and aims to be a PHP equivalent of the well known Java tool PMD.",
@@ -5550,13 +5148,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/8c4ef2aefd9788238897b678a985e1d5c8df6db4",
                 "reference": "8c4ef2aefd9788238897b678a985e1d5c8df6db4",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "~7.1"
@@ -5584,7 +5176,7 @@
                     ]
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5678,13 +5270,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpstan/phpstan-phpunit/zipball/fbf2ad56c3b13189d29655e226c9b1da47c2fad9",
                 "reference": "fbf2ad56c3b13189d29655e226c9b1da47c2fad9",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^4.0",
@@ -5722,7 +5308,7 @@
                     "PHPStan\\": "src/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5741,13 +5327,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/a203a7afdda073d4ea405a6d9007a5b32de3be61",
                 "reference": "a203a7afdda073d4ea405a6d9007a5b32de3be61",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^4.0",
@@ -5779,7 +5359,7 @@
                     "PHPStan\\": "src/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -5798,13 +5378,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/807e6013b00af69b6c5d9ceb4282d0393dbb9d8d",
                 "reference": "807e6013b00af69b6c5d9ceb4282d0393dbb9d8d",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
@@ -5835,7 +5409,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5867,13 +5441,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/050bedf145a257b1ff02746c31894800e5122946",
                 "reference": "050bedf145a257b1ff02746c31894800e5122946",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1"
@@ -5892,7 +5460,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5923,13 +5491,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
                 "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
@@ -5940,7 +5502,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5970,13 +5532,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/1038454804406b0b5f5f520358e78c1c2f71501e",
                 "reference": "1038454804406b0b5f5f520358e78c1c2f71501e",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1"
@@ -5995,7 +5551,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6025,13 +5581,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/995192df77f63a59e47f025390d2d1fdf8f425ff",
                 "reference": "995192df77f63a59e47f025390d2d1fdf8f425ff",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
@@ -6051,7 +5601,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6164,13 +5714,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
                 "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
@@ -6186,7 +5730,7 @@
                     "Psr\\SimpleCache\\": "src/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6436,13 +5980,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/code-unit-reverse-lookup/zipball/4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
                 "reference": "4419fcdb5eabb9caa61a27c7a1db532a6b55dd18",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0"
@@ -6461,7 +5999,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6487,13 +6025,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/5de4fc177adf9bce8df98d8d141a7559d7ccf6da",
                 "reference": "5de4fc177adf9bce8df98d8d141a7559d7ccf6da",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1",
@@ -6514,7 +6046,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6557,13 +6089,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/720fcc7e9b5cf384ea68d9d930d480907a0c1a29",
                 "reference": "720fcc7e9b5cf384ea68d9d930d480907a0c1a29",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1"
@@ -6583,7 +6109,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6672,13 +6198,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/68609e1261d215ea5b21b7987539cbfbe156ec3e",
                 "reference": "68609e1261d215ea5b21b7987539cbfbe156ec3e",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0",
@@ -6699,7 +6219,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6745,13 +6265,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/finder-facade/zipball/4a3174709c2dc565fe5fb26fcf827f6a1fc7b09f",
                 "reference": "4a3174709c2dc565fe5fb26fcf827f6a1fc7b09f",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "symfony/finder": "~2.3|~3.0|~4.0",
@@ -6763,7 +6277,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6790,13 +6304,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4",
                 "reference": "e8ba02eed7bbbb9e59e43dedd3dddeff4a56b0c4",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0"
@@ -6818,7 +6326,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6847,13 +6355,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/object-enumerator/zipball/7cfd9e65d11ffb5af41198476395774d4c8a84c5",
                 "reference": "7cfd9e65d11ffb5af41198476395774d4c8a84c5",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0",
@@ -6874,7 +6376,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6900,13 +6402,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/object-reflector/zipball/773f97c67f28de00d397be301821b06708fca0be",
                 "reference": "773f97c67f28de00d397be301821b06708fca0be",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0"
@@ -6925,7 +6421,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6951,13 +6447,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpcpd/zipball/0d9afa762f2400de077b2192f4a9d127de0bb78e",
                 "reference": "0d9afa762f2400de077b2192f4a9d127de0bb78e",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
@@ -6981,7 +6471,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7008,13 +6498,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8",
                 "reference": "5b0cd723502bac3b006cbf3dbf7a1e3fcefe4fa8",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.0"
@@ -7033,7 +6517,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7067,13 +6551,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
                 "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1"
@@ -7089,7 +6567,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7115,13 +6593,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/99732be0ddb3361e16ad77b68ba41efc8e979019",
                 "reference": "99732be0ddb3361e16ad77b68ba41efc8e979019",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
@@ -7137,7 +6609,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7164,13 +6636,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/slevomat/coding-standard/zipball/bff96313d8c7c2ba57a4edb13c1c141df8988c58",
                 "reference": "bff96313d8c7c2ba57a4edb13c1c141df8988c58",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^7.1",
@@ -7190,7 +6656,7 @@
                     "SlevomatCodingStandard\\": "SlevomatCodingStandard"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -8558,13 +8024,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/theseer/fDOMDocument/zipball/6e8203e40a32a9c770bcb62fe37e68b948da6dca",
                 "reference": "6e8203e40a32a9c770bcb62fe37e68b948da6dca",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
@@ -8577,7 +8037,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -8604,13 +8064,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/theseer/tokenizer/zipball/11336f6f84e16a720dae9d8e6ed5019efa85a0f9",
                 "reference": "11336f6f84e16a720dae9d8e6ed5019efa85a0f9",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
@@ -8624,7 +8078,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -8650,13 +8104,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1bdf24f065975594f6a117f0f1f6cabf1333b156",
                 "reference": "1bdf24f065975594f6a117f0f1f6cabf1333b156",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://repo.packagist.com/eoneopay/dists/%package%/%version%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": "^5.4 || ^7.0",
@@ -8677,7 +8125,7 @@
                     "Dotenv\\": "src/"
                 }
             },
-            "notification-url": "https://repo.packagist.com/eoneopay/downloads/",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -8753,8 +8201,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "eonx-com/eoneopay-phpsdk": 10,
-        "eonx-com/sdkblueprint": 10,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
